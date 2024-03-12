@@ -9,34 +9,67 @@
             font-family: Arial;
         }
         .title{
-            font-size: 30px;
+            font-size: 50px;
             font-weight: bold;
+        }
+        .heading{
+          font-size:60px;
+          font-style: bold;
+          color: azure;
         }
         .move-icon{
             height:50px;
 
         }
+        .move-button{
+          background-color: transparent;
+          border: 2.5px solid white;
+          width: 120px;
+          height:120px;
+          border-radius: 60px;
+          margin-right:12px;
+          cursor: pointer;
+        }
+        .result{
+          font-size:25px;
+          font-weight:bold;
+          margin-top:50px;
+        }
+
+        .score{
+          margin-top:50px;
+        }
+
+        .reset-score-button{
+          background-color:white;
+          border: none;
+          font-size: 15px;
+          padding: 7px 14px;
+          cursor: pointer;
+        }
+        
     </style>
   </head>
   <body>
-    <p>Rock Paper Scissors</p>
+    <p class="heading">Rock Paper Scissors</p>
     <!-- Buttons for player moves -->
     <button onclick="
-      playGame('rock');"><img src="rock-emoji.png" class="move-icon"></button>
+      playGame('rock');" class = "move-button"><img src="rock-emoji.png" class="move-icon"></button>
 
     <button onclick="
-      playGame('paper');"><img src="paper-emoji.png" class="move-icon"></button>
+      playGame('paper');" class = "move-button"><img src="paper-emoji.png" class="move-icon"></button>
 
     <button onclick="
-      playGame('scissors');"><img src="scissors-emoji.png" class="move-icon"></button>
+      playGame('scissors');" class = "move-button"><img src="scissors-emoji.png" class="move-icon"></button>
 
     <!-- Display elements for result, moves, and score -->
-    <p class="js-result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score"></p>
+    <p class="js-result result"></p>
+    <p class="js-moves">
+</p>
+    <p class="js-score" class="score"></p>
 
     <!-- Button to reset score -->
-    <button onclick="resetScore(); updateScoreElement();">Reset Score</button>
+    <button onclick="resetScore(); updateScoreElement();" class="reset-score-button">Reset Score</button>
 
     <script>
         let score = JSON.parse(localStorage.getItem("score"));
