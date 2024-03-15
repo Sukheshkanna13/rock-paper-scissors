@@ -1,0 +1,2 @@
+![Screen Shot 2024-03-15 at 9 25 12 PM](https://github.com/Sukheshkanna13/rock-paper-scissors/assets/115562434/0b57dcf3-fad4-4d2a-a96b-bd2ebb224ca1)
+The project implements a Rock Paper Scissors game using JavaScript. It generates random moves for the computer and compares them with the user's input, providing clear output. Additionally, it effectively stores the game results in local storage using JavaScript and utilizes mathematical logic for efficient computation.
