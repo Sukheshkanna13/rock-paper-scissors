@@ -51,6 +51,6 @@ body {
     font-size: 15px;
     padding: 8px 15px;
     cursor: pointer;
-    margin-top: 20px; /* Adjust margin as needed */
+    margin-top: 20px; 
+    margin: right 18px;
   }
-  
